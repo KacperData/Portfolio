@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Courier companies</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Back</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="3 Project 2.html">Project 2</a></li>
+							<li><a href="3 PBI.html">Power BI</a></li>
+							<li class="active"><a href="3 DAX.html">DAX</a></li>
+						</ul>
+						<ul class="icons">
+
+						</ul>
+					</nav>
+
+				                <!-- Main -->
+								<div id="main">
+									
+									<!-- Post -->
+										<section class="post">
+									
+												<div class="major">
+													<div class="col-12 col-20-small">
+													<center><h3>DAX queries with description</h3></center> <br>
+									
+			
+											<p>Information how many orders we have:
+											<pre><b>How many orders = COUNTROWS('Sales')</b></pre></p><br>
+											<p>I did below calculations for AVG, MIN, MAX, Median, Sales and Orders for TNT. It shows always data for TNT despite other filters or slicers.
+											<pre><b>AVG sales TNT =
+CALCULATE(
+[Avg sales],
+Delivery[Courier_company] = "TNT"
+)</b> </pre>	
+										</p><br>
+										<p>Calculate % how much is sales is bigger/smaller than target.
+										<pre><b>Value vs. Target % =
+DIVIDE(
+[Sales value],
+[Targets],
+BLANK()
+)
+-1</b></pre>	</p> <br>
+											<p>Calculate if sales reach the target or not.
+											<pre><b>Value vs. targets = 
+[Sales value] - [Targets]</b></pre></p><br>
+										</section>
+								</div>
+							<!-- Footer -->
+								<footer id="footer">
+									
+									</section>
+								</footer>
+							<!-- Copyright -->
+								<div id="copyright">
+							
+						</div>
+					<!-- Scripts -->
+					<script src="assets/js/jquery.min.js"></script>
+					<script src="assets/js/jquery.scrollex.min.js"></script>
+					<script src="assets/js/jquery.scrolly.min.js"></script>
+					<script src="assets/js/browser.min.js"></script>
+					<script src="assets/js/breakpoints.min.js"></script>
+					<script src="assets/js/util.js"></script>
+					<script src="assets/js/main.js"></script>
+				
+				</body>
+			</html>
